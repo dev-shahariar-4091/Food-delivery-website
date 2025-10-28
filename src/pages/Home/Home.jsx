@@ -10,10 +10,11 @@ const Home = () => {
     const [category, setCategory] = useState("All");
     return (
         <div>
+             <Navber></Navber>
              <Header></Header>
              <Menu category ={category} setCategory={setCategory}></Menu>
              <FoodDisplay category={category}></FoodDisplay>
-             {/* <Footer></Footer> */}
+             <Footer></Footer> 
         </div>
     );
 };
